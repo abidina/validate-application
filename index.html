@@ -1,0 +1,137 @@
+<!-- Build a form that accepts a loan application. -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Loan Application</title>
+  <link rel="stylesheet" type="text/css" href="validation.css">
+</head>
+<body>
+<form>
+
+<!-- applicant info -->
+  <table class="info">
+  <p>
+  <h3>Applicant Information</h3>
+    <tr>
+      <td>Applicant First Name</td>
+      <td><input type="text" name="first_name"></td>
+    </tr>
+    <tr>
+      <td>Applicant Middle Initial</td>
+      <td><input type="text" name="middle_initial"></td>
+    </tr>
+    <tr>
+      <td>Applicant Last Name</td>
+      <td><input type="text" name="last_name"></td>
+    </tr>
+    <tr>
+      <td>Applicant Address</td>
+      <td><input type="text" name="address"></td>
+    </tr>
+    <tr>
+      <td>Applicant Occupation</td>
+      <td><input type="text" name="occupation"></td>
+    </tr>
+    <tr>
+      <td>Applicant Employer</td>
+      <td><input type="text" name="employer"></td>
+    </tr>
+    <tr>
+      <td>Employer Address</td>
+      <td><input type="text" name="employer_address"></td>
+    </tr>
+  </p>
+  </table>
+
+<!-- loan type -->
+  <table class="loan_type">
+    <p>
+    <h3>Loan Type</h3>
+    <tr>
+      <td><input type="radio" name="loan_type">Commercial</td>
+      <td><input type="radio" name="loan_type">Real Estate</td>
+    </tr>
+    <tr>
+      <td><input type="radio" name="loan_type">Personal</td>
+      <td><input type="radio" name="loan_type">Mortgage</td>
+    </tr>
+    </p>
+  </table>
+
+<!-- loan amount -->
+  <table class="loan_amount">
+    <p>
+    <h3>Loan Amount</h3>
+    <tr>
+      <td><input type="text" name="amount"></td>
+    </tr>
+    </p>
+  </table>
+
+<!-- loan length -->
+  <table class="loan_length">
+  <p>
+  <h3>Loan Length</h3>
+    <tr>
+      <td><input type="radio" name="loan_length">5 years</td>
+    </tr>
+    <tr>
+      <td><input type="radio" name="loan_length">15 years</td>
+    </tr>
+    <tr>
+      <td><input type="radio" name="loan_length">30 years</td>
+    </tr>
+  </p>
+  </table>
+
+<!-- Checkbox group for special conditions -->
+<table class="special">
+<p>
+<h3>Special Conditions</h3>
+  <tr>
+    <td><input type="checkbox" name="special">I have a down payment.</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="special">I am an out-of-state resident.</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="special">I am married.</td>
+  </tr>
+  <tr>
+    <td><input type="checkbox" name="special">This loan will be co-signed.</td>
+  </tr>
+</p>
+</table>
+
+
+<!-- A text area to allow for additional comments -->
+<p>
+  <h3>Additional Comments</h3>
+  <textarea class="comments"></textarea>
+</p>
+
+<!-- contact information -->
+  <table class="contact">
+  <p>
+  <h3>Contact Information</h3>
+    <tr>
+      <td>Applicant Email Address</td>
+      <td><input type="email" name="email"></td>
+    </tr>
+    <tr>
+      <td>Applicant Telephone Number</td>
+      <td><input type="text" name="phone"></td>
+    </tr>
+    <tr>
+      <td>Applicant LinkedIn URL</td>
+      <td><input type="url" name="linkedin"></td>
+    </tr>
+  </p>
+  </table>
+</form>
+
+<button type="submit">Submit</button>
+
+</body>
+</html>
